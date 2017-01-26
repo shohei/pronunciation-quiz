@@ -4,7 +4,7 @@ import random
 import math
 import os
 
-confusing = [('cards','cars'),('hard','heard'),('bug','bag'),('fan','fun'),('hat','hut'),('hot','hat'),('hot','hut'),('wonder','wander'),('collect','correct'),('flea','free'),('glass','grass'),('river','liver'),('row','low'),('raw','law'),('father','further'),('first','fast'),('year','ear'),('rock','lock')]
+confusing = [('cards','cars'),('hard','heard'),('bug','bag'),('fan','fun'),('hat','hut'),('hot','hat'),('hot','hut'),('wonder','wander'),('collect','correct'),('flea','free'),('glass','grass'),('river','liver'),('row','low'),('raw','law'),('father','further'),('first','fast'),('year','ear'),('rock','lock'),('bad','bat')]
 
 length = len(confusing)
 csound = "/System/Library/Sounds/Hero.aiff"
