@@ -20,6 +20,9 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+smile = "\xF0\x9F\x98\x84"
+pout = "\xF0\x9F\x98\xA1"
+
 while True:
     number = int(math.floor(random.random()*length))
     pair = confusing[number]
@@ -30,11 +33,11 @@ while True:
 
     answer = raw_input("Did you hear "+ pair[0] + " or " + pair[1]+ "? >> ")
     if (answer==pair[idx]):
-        print bcolors.OKGREEN + bcolors.BOLD + "you are right!" + bcolors.ENDC
+        print smile + bcolors.OKGREEN + bcolors.BOLD + "  you are right!" + bcolors.ENDC
         cmd = "afplay " + csound
         os.system(cmd)
     else:
-        print bcolors.FAIL + bcolors.BOLD + "you are wrong." + bcolors.ENDC
+        print pout + bcolors.FAIL + bcolors.BOLD + "  you are wrong." + bcolors.ENDC
         cmd = "afplay " + wsound
         os.system(cmd)
     
